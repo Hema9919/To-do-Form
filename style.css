@@ -1,0 +1,357 @@
+* {
+    margin: 0 auto;
+    padding: 0px;
+}
+/*--------------------------------------small devices----------------------------------------*/
+@media only screen and (max-width: 767px){
+body{
+  background-color:#ebca10;
+}
+#page__wrapper{
+        display: grid;
+        grid-template-rows: 10vh 20vh 30vh 15vh 40vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: "head"
+                              "im"
+                             "todo__form"
+                             "msg__cont";
+       gap: 6px;
+       margin: 5px;                      
+    }
+#head{
+    grid-area: head;
+    align-self: center;
+    text-align: center;
+    background-color: saddlebrown;
+    padding: 10px;
+}
+#h{
+    color: white;
+}
+#im{
+    grid-area: im;
+    padding:3px;
+    bottom: 10px;
+}
+#todo__form {
+    grid-area: todo__form ;
+    background-color: olive;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 6px;
+
+}
+
+#todo__form *{
+    padding: 2vh;
+}
+
+#butt {
+    margin: 2vh;
+    width: 30vw;
+    align-self: center;
+    background-color: purple;
+    size: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+#msg__cont{
+    grid-area: msg__cont;
+    width: 100%;
+    text-align: center;
+}
+
+.item__ok{   
+    border: 3px solid red;
+    width: 90%;
+
+}
+#text{
+    font-size: 20px;
+    color:white;
+    border: solid saddlebrown 3px;
+    background-color: slateblue;
+}
+.list li{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+.num {
+    color:white;
+    background-color: red;
+    width: 5vw;
+    height: 5vh;
+    margin: 0px 7px 0px 0px;
+    flex: 1;
+}
+.txt {
+flex: 4;
+
+}
+.close {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: red;
+    width: 5vw;
+    height: 5vh;
+    margin: 0px 0px 0px 7px;
+    justify-self: end;
+    flex:1;
+}
+.close:hover{
+    background-color:#ebca10;
+    color:orangered;
+}
+.ok {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: red;
+    width: 5vw;
+    height: 5vh;
+    margin: 0px 0px 0px 7px;
+    justify-self: end;
+    flex: 1;
+}
+.ok:hover{
+    background-color:#ebca10;
+    color:orangered;
+}
+}
+
+
+/*--------------------------------------tablet devices----------------------------------------*/
+@media only screen and (min-width: 768px){
+    body{
+        background-color:#ebca10;
+      }
+      #page__wrapper{
+              display: grid;
+              grid-template-rows: 10vh 20vh 30vh 15vh 40vh;
+              grid-template-columns: 1fr;
+              grid-template-areas: "head"
+                                    "im"
+                                   "todo__form"
+                                   "msg__cont";
+             gap: 6px;
+             margin: 5px;                      
+          }
+      #head{
+          grid-area: head;
+          align-self: center;
+          text-align: center;
+          background-color: saddlebrown;
+          padding: 10px;
+      }
+      #h{
+          color: white;
+      }
+      #im{
+          grid-area: im;
+          padding:0px;
+      }
+      #todo__form {
+          grid-area: todo__form ;
+          background-color: olive;
+          align-self: center;
+          display: flex;
+          flex-direction: column;
+          margin: 6px;
+      
+      }
+      
+      #todo__form *{
+          padding: 2vh;
+      }
+      
+      #butt {
+          margin: 2vh;
+          width: 30vw;
+          align-self: center;
+          background-color: purple;
+          size: 20px;
+          font-size: 20px;
+          color: white;
+      }
+      
+      #msg__cont{
+          grid-area: msg__cont;
+          width: 100%;
+          text-align: center;
+      }
+      
+      .item__ok{   
+          border: 3px solid red;
+          width: 90%;
+      
+      }
+      #text{
+          font-size: 20px;
+          color:white;
+          border: solid saddlebrown 3px;
+          background-color: slateblue;
+      }
+      .list li{
+        display: flex;
+        padding: 0;
+        justify-content: center;
+    }
+    
+    .num {
+        color: white;
+        background-color: red;
+        width: 5vw;
+        height: 5vh;
+        margin: 0px 7px 0px 0px;
+        flex: 1;
+    }
+    .txt {
+    flex: 4;
+    }
+      .close {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: red;
+        width: 5vw;
+        height: 5vh;
+        margin: 0px 0px 0px 7px;
+        justify-self: end;
+        flex:1;
+    }
+    .close:hover{
+        background-color:#ebca10;
+        color:orangered;
+    }
+    .ok {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: red;
+        width: 5vw;
+        height: 5vh;
+        margin: 0px 0px 0px 7px;
+        justify-self: end;
+        flex: 1;
+    }
+    .ok:hover{
+        background-color:#ebca10;
+        color:orangered;
+    }    
+}
+
+
+
+/*--------------------------------------large devices----------------------------------------*/
+@media only screen and (min-width:1000px){
+    body{
+        background-color:#ebca10;
+      }
+      #page__wrapper{
+              display: grid;
+              grid-template-rows: 10vh 20vh 30vh  40vh;
+              grid-template-columns: 1fr;
+              grid-template-areas: "head"
+                                    "im"
+                                   "todo__form"
+                                   "msg__cont";
+             gap: 6px;
+             margin: 5px;                      
+          }
+      #head{
+          grid-area: head;
+          align-self: center;
+          text-align: center;
+          background-color: saddlebrown;
+          padding: 10px;
+          width: 100%;
+      }
+      #h{
+          color: white;
+      }
+      #im{
+          grid-area: im;
+          padding:0px;
+      }
+      #todo__form {
+          grid-area: todo__form ;
+          background-color: olive;
+          align-self: center;
+          display: flex;
+          flex-direction: column;
+          margin: 6px;
+      
+      }
+      
+      #todo__form *{
+          padding: 2vh;
+      }
+      
+      #butt {
+          margin: 2vh;
+          width: 30vw;
+          align-self: center;
+          background-color: purple;
+          size: 20px;
+          font-size: 20px;
+          color: white;
+      }
+      
+      #msg__cont{
+          grid-area: msg__cont;
+          width: 100%;
+          text-align: center;
+      }
+      
+      .item__ok{   
+          border: 3px solid red;
+          width: 90%;
+          font-size: 30px;
+      
+      }
+      #text{
+          font-size: 30px;
+          color:white;
+          border: solid saddlebrown 5px;
+          background-color: slateblue;
+      }
+      .list li{
+        display: flex;
+        padding: 0;
+        justify-content: center;
+    }
+    .num {
+        color:white;
+        background-color: red;
+        width: 5vw;
+        height: 5vh;
+        margin: 0px 7px 0px 0px;
+        flex: 1;
+    }
+    .txt {
+    flex: 4;
+    }
+      .close {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: red;
+        width: 5vw;
+        height: 5vh;
+        margin: 0px 0px 0px 7px;
+        justify-self: end;
+        flex:1;
+    }
+    .close:hover{
+        background-color:#ebca10;
+        color:orangered;
+    }
+    .ok {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: red;
+        width: 5vw;
+        height: 5vh;
+        margin: 0px 0px 0px 7px;
+        justify-self: end;
+        flex: 1;
+    }
+    .ok:hover{
+        background-color:#ebca10;
+        color:orangered;
+    }    
+}
